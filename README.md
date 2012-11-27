@@ -38,7 +38,7 @@ grunt.loadNpmTasks('grunt-functional');
 5. Run `grunt functional` and your functional tests will run on the host and port specified in your configuration. 
 
 ## Release History
-0.1.0 - Initial Release.
+0.1.1 - Initial Release.
 
 ## License
 Copyright (c) 2012 Caige Nichols "caiges"  
