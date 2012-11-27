@@ -1,0 +1,38 @@
+{
+  "name": "grunt-functional",
+  "description": "Run your functional tests through casperjs.",
+  "version": "0.1.0",
+  "homepage": "http://caiges.github.com/grunt-functional",
+  "author": {
+    "name": "caiges",
+    "email": "caigesn@gmail.com",
+    "url": "http://www.caigenichols.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/caiges/grunt-functional.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caiges/grunt-functional/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://caiges.github.com/grunt-functional/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "bin": "bin/grunt-functional",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.16"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
