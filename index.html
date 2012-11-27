@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>grunt-functional by caiges</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/caiges/grunt-functional">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/caiges/grunt-functional/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/caiges/grunt-functional/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>grunt-functional</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/caiges">caiges</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>grunt-functional</h1>
+
+<p>Run self-hosted functional tests through casperjs. </p>
+
+<p>This task will spin up your app on the host and port specified in your configuration and run your functional tests.</p>
+
+<h2>Getting Started</h2>
+
+<p>Install this grunt plugin next to your project's <a href="https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md">grunt.js gruntfile</a> with: <code>npm install grunt-functional</code></p>
+
+<p>Then add this line to your project's <code>grunt.js</code> gruntfile:</p>
+
+<div class="highlight"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-functional'</span><span class="p">);</span>
+</pre></div>
+
+<h2>Documentation</h2>
+
+<ol>
+<li><a href="http://casperjs.org/installation.html">Install CasperJS</a></li>
+<li>
+<p><a href="https://github.com/ronaldlokers/grunt-casperjs">Install and configure grunt-casperjs</a></p>
+
+<div class="highlight"><pre>  <span class="nx">casperjs</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">files</span><span class="o">:</span> <span class="p">[</span><span class="s1">'test/functional/**/*.js'</span><span class="p">]</span>
+  <span class="p">}</span>
+</pre></div>
+</li>
+<li><p>Add your functional tests to your project's "test/functional" directory.</p></li>
+<li>
+<p>Add the following to your configuration:</p>
+
+<div class="highlight"><pre>  <span class="nx">functional_tests</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">hostname</span><span class="o">:</span> <span class="s1">'localhost'</span><span class="p">,</span>
+    <span class="nx">port</span><span class="o">:</span> <span class="mi">35729</span><span class="p">,</span>
+  <span class="p">}</span>
+</pre></div>
+</li>
+<li><p>Run <code>grunt functional</code> and your functional tests will run on the host and port specified in your configuration. </p></li>
+</ol><h2>Release History</h2>
+
+<p>0.1.0 - Initial Release.</p>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2012 Caige Nichols "caiges"<br>
+Licensed under the MIT license.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-36626043-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
