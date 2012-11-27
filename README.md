@@ -1,6 +1,8 @@
 # grunt-functional
 
-Run self-hosted functional tests through casperjs.
+Run self-hosted functional tests through casperjs. 
+
+This task will spin up your app on the host and port specified in your configuration and run your functional tests.
 
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-functional`
@@ -17,16 +19,23 @@ grunt.loadNpmTasks('grunt-functional');
 ## Documentation
 
 1. [Install CasperJS](http://casperjs.org/installation.html)
-2. Add your functional tests to your project's "test/functional" directory.
-3. Add the following to your configuration:
+2. [Install and configure grunt-casperjs](https://github.com/ronaldlokers/grunt-casperjs)
 
-```javascript
-functional_tests: {
-  hostname: 'localhost',
-  port: 35729,
-}
-```
-4. Run `grunt functional` and your functional tests will run on the host and port specified in your configuration. 
+    ```javascript
+      casperjs: {
+        files: ['test/functional/**/*.js']
+      }
+    ```
+3. Add your functional tests to your project's "test/functional" directory.
+4. Add the following to your configuration:
+
+    ```javascript
+      functional_tests: {
+        hostname: 'localhost',
+        port: 35729,
+      }
+    ```
+5. Run `grunt functional` and your functional tests will run on the host and port specified in your configuration. 
 
 ## Release History
 0.1.0 - Initial Release.
