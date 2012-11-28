@@ -4,11 +4,6 @@ Run self-hosted functional tests through casperjs.
 
 This task will spin up your app on the host and port specified in your configuration and run your functional tests.
 
-## Getting Started
-
-
-Then add this line to your project's `grunt.js` gruntfile:
-
 [grunt]: http://gruntjs.com/
 [getting_started]: https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md
 
