@@ -1,7 +1,7 @@
 {
   "name": "grunt-functional",
   "description": "Run your functional tests through casperjs.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "http://caiges.github.com/grunt-functional",
   "author": {
     "name": "caiges",
@@ -30,7 +30,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.3.16"
+    "grunt": "~0.3.x"
   },
   "keywords": [
     "gruntplugin"
