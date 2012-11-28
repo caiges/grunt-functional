@@ -46,41 +46,46 @@
 
 <h2>Getting Started</h2>
 
-<p>Install this grunt plugin next to your project's <a href="https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md">grunt.js gruntfile</a> with: <code>npm install grunt-functional</code></p>
-
 <p>Then add this line to your project's <code>grunt.js</code> gruntfile:</p>
-
-<div class="highlight"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-functional'</span><span class="p">);</span>
-</pre></div>
 
 <h2>Documentation</h2>
 
 <ol>
 <li><a href="http://casperjs.org/installation.html">Install CasperJS</a></li>
 <li>
-<p><a href="https://github.com/ronaldlokers/grunt-casperjs">Install and configure grunt-casperjs</a></p>
+<p>Install and configure <a href="https://github.com/ronaldlokers/grunt-casperjs">grunt-casperjs</a> with: <code>npm install grunt-casperjs</code></p>
 
 <div class="highlight"><pre>  <span class="nx">casperjs</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">files</span><span class="o">:</span> <span class="p">[</span><span class="s1">'test/functional/**/*.js'</span><span class="p">]</span>
   <span class="p">}</span>
 </pre></div>
 </li>
+<li>
+<p>Install and configure grunt-functional with: <code>npm install grunt-functional</code></p>
+
+<div class="highlight"><pre>  <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-functional'</span><span class="p">);</span>
+</pre></div>
+</li>
 <li><p>Add your functional tests to your project's "test/functional" directory.</p></li>
 <li>
 <p>Add the following to your configuration:</p>
 
-<div class="highlight"><pre>  <span class="nx">functional_tests</span><span class="o">:</span> <span class="p">{</span>
+<div class="highlight"><pre>  <span class="nx">server</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">base</span><span class="o">:</span> <span class="s1">'app'</span>
+  <span class="p">},</span>
+  <span class="nx">functional_tests</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">hostname</span><span class="o">:</span> <span class="s1">'localhost'</span><span class="p">,</span>
     <span class="nx">port</span><span class="o">:</span> <span class="mi">35729</span><span class="p">,</span>
   <span class="p">}</span>
 </pre></div>
 </li>
-<li><p>Run <code>grunt functional</code> and your functional tests will run on the host and port specified in your configuration. </p></li>
+<li><p>Run <code>grunt functional</code> and your functional tests will run on the host and port specified in your configuration.</p></li>
 </ol><h2>Release History</h2>
 
-<p>0.1.0 - Initial Release.</p>
-
-<h2>License</h2>
+<ul>
+<li>0.2.0 - Fixed grunt/yeoman compatibility. Yeoman is using an alpha version of grunt which expected Gruntfile.js. Added a server provider that doesn't depend on Yeoman.</li>
+<li>0.1.1 - Initial Release.</li>
+</ul><h2>License</h2>
 
 <p>Copyright (c) 2012 Caige Nichols "caiges"<br>
 Licensed under the MIT license.</p>
