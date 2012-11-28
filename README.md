@@ -42,6 +42,8 @@ Then add this line to your project's `grunt.js` gruntfile:
 
 6. Run `grunt functional` and your functional tests will run on the host and port specified in your configuration.
 
+![Terminal example of grunt functional](https://s3.amazonaws.com/grunt-functional/images/terminal-grunt-functional.png)
+
 ## Release History
 - 0.2.0 - Fixed grunt/yeoman compatibility. Yeoman is using an alpha version of grunt which expected Gruntfile.js. Added a server provider that doesn't depend on Yeoman.
 - 0.1.1 - Initial Release.
